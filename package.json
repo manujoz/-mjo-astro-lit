@@ -1,15 +1,14 @@
 {
-    "name": "@astrojs/lit",
-    "version": "4.3.0",
-    "description": "Use Lit components within Astro",
+    "name": "@mjo/astro-lit",
+    "version": "1.0.0",
+    "description": "Use Lit components within Astro, adapted from @astrojs/lit due to was deprecated",
     "type": "module",
     "types": "./dist/index.d.ts",
-    "author": "withastro",
+    "author": "Manu Overa",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/withastro/astro.git",
-        "directory": "packages/integrations/lit"
+        "url": "https://github.com/tu-usuario/astro-lit.git"
     },
     "keywords": [
         "astro-integration",
@@ -17,13 +16,13 @@
         "renderer",
         "lit"
     ],
-    "bugs": "https://github.com/withastro/astro/issues",
-    "homepage": "https://docs.astro.build/en/guides/integrations-guide/lit/",
+    "bugs": "https://github.com/tu-usuario/astro-lit/issues",
+    "homepage": "https://github.com/tu-usuario/astro-lit#readme",
     "exports": {
         ".": "./dist/index.js",
         "./server.js": {
-            "default": "./server.js",
-            "types": "./server.d.ts"
+            "types": "./server.d.ts",
+            "default": "./server.js"
         },
         "./client-shim.js": "./client-shim.js",
         "./dist/client.js": "./dist/client.js",
@@ -47,7 +46,7 @@
     },
     "scripts": {
         "build": "node build.js && tsc",
-        "build:ci": "node build.js",
+        "build:ci": "node build.js && tsc",
         "dev": "node dev.js",
         "test": "node test.js"
     },
