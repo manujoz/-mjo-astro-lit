@@ -114,7 +114,7 @@ async function renderToStaticMarkup(Component, props, slots) {
 }
 
 export default {
-    name: "@astrojs/lit",
+    name: "mjo-astro-lit",
     check,
     renderToStaticMarkup,
 };

@@ -20,16 +20,23 @@ The original `@astrojs/lit` integration was officially deprecated by the Astro t
 To install the package, run:
 
 ```bash
-npm install @mjo/astro-lit
+npm install mjo-astro-lit
 ```
 
 Then, apply the integration to your `astro.config.*` file using the `integrations` property:
 
 ```js
 import { defineConfig } from "astro/config";
-import lit from "@mjo/astro-lit";
+import lit from "mjo-astro-lit";
 
 export default defineConfig({
+    vite: {
+        resolve: {
+            alias: {
+                "@astrojs/lit": "mjo-astro-lit",
+            },
+        },
+    },
     integrations: [lit()],
 });
 ```

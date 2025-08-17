@@ -1,6 +1,6 @@
 {
-    "name": "@mjo/astro-lit",
-    "version": "1.0.0",
+    "name": "mjo-astro-lit",
+    "version": "1.0.1",
     "description": "Use Lit components within Astro, adapted from @astrojs/lit due to was deprecated",
     "type": "module",
     "types": "./dist/index.d.ts",
@@ -8,7 +8,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tu-usuario/astro-lit.git"
+        "url": "git+https://github.com/manujoz/-mjo-astro-lit.git"
     },
     "keywords": [
         "astro-integration",
@@ -16,8 +16,8 @@
         "renderer",
         "lit"
     ],
-    "bugs": "https://github.com/tu-usuario/astro-lit/issues",
-    "homepage": "https://github.com/tu-usuario/astro-lit#readme",
+    "bugs": "https://github.com/manujoz/-mjo-astro-lit/issues",
+    "homepage": "https://github.com/manujoz/-mjo-astro-lit#readme",
     "exports": {
         ".": "./dist/index.js",
         "./server.js": {
@@ -73,6 +73,6 @@
         "lit": "^3.1.0"
     },
     "publishConfig": {
-        "provenance": true
+        "access": "public"
     }
 }
